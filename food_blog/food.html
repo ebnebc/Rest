@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Erwin Bárcena">
+  <meta name="description" content="Blog de comida italiana auténtica con recetas, historia y cultura gastronómica.">
+  <meta name="keywords" content="Comida italiana, pasta, pizza, risotto, lasaña, tiramisú, blog de cocina">
+  <meta name="copyright" content="Italian Food's">
+  <title>Blog Italian Food</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/food.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-animate-left" 
+     style="display:none;z-index:3;width:300px;background:#fff;" 
+     id="mySidebar">
+  <a onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-right">✕</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Platillos</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Sobre mí</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Equipo</a>
+</nav>
+
+<!-- Top menu -->
+<header class="w3-top">
+  <div class="w3-white w3-xlarge w3-card" style="max-width:1200px;margin:auto;">
+    <div class="w3-button w3-padding-16 w3-left" style="margin-left:10px;" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+      <i class="fa fa-shopping-cart"></i>
+    </div>
+    <div class="w3-center w3-padding-16 header-title">Italian Food Blog</div>
+  </div>
+</header>
+
+<!-- Contenido principal -->
+<main class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- Primera cuadrícula: platillos -->
+  <section class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <article class="w3-quarter">
+      <img src="IMG/pizza-margarita.jpg" alt="Pizza Margherita">
+      <h3>Pizza Margherita</h3>
+      <p>Clásica pizza italiana con tomate, mozzarella y albahaca fresca.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/Lasagna.jpg" alt="Lasaña Tradicional">
+      <h3>Lasaña Tradicional</h3>
+      <p>Capas de pasta, carne, salsa bechamel y queso gratinado.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Pasta cremosa con panceta, huevo y queso parmesano.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/Risotto_de_Champiñones.jpg" alt="Risotto de Champiñones">
+      <h3>Risotto de Champiñones</h3>
+      <p>Arroz cremoso con setas frescas y queso parmesano.</p>
+    </article>
+  </section>
+
+  <!-- Segunda cuadrícula: más platillos -->
+  <section class="w3-row-padding w3-padding-16 w3-center">
+    <article class="w3-quarter">
+      <img src="IMG/Focaccia.jpg" alt="Focaccia Italiana">
+      <h3>Focaccia Italiana</h3>
+      <p>Pan esponjoso con aceite de oliva, romero y sal gruesa.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/Bruschetta.jpg" alt="Bruschetta">
+      <h3>Bruschetta</h3>
+      <p>Pan tostado con tomate, ajo y albahaca fresca.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/Tiramisú.jpg" alt="Tiramisú">
+      <h3>Tiramisú</h3>
+      <p>Postre clásico italiano con café, mascarpone y cacao.</p>
+    </article>
+    <article class="w3-quarter">
+      <img src="IMG/Gnocchi.jpg" alt="Gnocchi al Pesto">
+      <h3>Gnocchi al Pesto</h3>
+      <p>Ñoquis de papa con salsa de albahaca y piñones.</p>
+    </article>
+  </section>
+
+  <!-- Sección About -->
+  <section id="about" class="w3-container w3-padding-32 w3-center">
+    <h3>Sobre mí, el amante de la comida italiana</h3>
+    <img src="IMG/cehfyo.jpg" alt="Chef italiano" class="w3-image">
+    <div class="w3-padding-32">
+      <h4><b>¡Soy quien soy!</b></h4>
+      <h6><i>Apasionado por la cocina italiana</i></h6>
+      <p>Exploro y comparto los sabores auténticos de Italia. Mi objetivo es llevar un pedacito de Italia a cada plato y a cada lector de este blog.</p>
+    </div>
+  </section>
+
+  <!-- Sección Equipo -->
+  <section id="team" class="w3-container w3-padding-32 w3-center">
+    <h3>Nuestro Equipo de Chefs</h3>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-third">
+        <img src="IMG/chef1.jpg" alt="Massimo Bottura" class="chef-img chef1">
+        <h4>Massimo Bottura</h4>
+        <p>Es un chef italiano que fusiona tradición y creatividad en su restaurante Osteria Francescana.</p>
+      </div>
+      <div class="w3-third">
+        <img src="IMG/chef2.jpg" alt="Niko Romito" class="chef-img chef2">
+        <h4>Niko Romito</h4>
+        <p>Es un chef italiano conocido por su cocina minimalista y refinada en el restaurante Reale.</p>
+      </div>
+      <div class="w3-third">
+        <img src="IMG/chef3.jpg" alt="Enrico Crippa" class="chef-img chef3">
+        <h4>Enrico Crippa</h4>
+        <p>Es un chef italiano reconocido por su cocina artística y vegetal en el restaurante Piazza Duomo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Sobre el blog</h3>
+      <p>Descubre recetas auténticas y aprende más sobre la rica tradición culinaria italiana.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Entradas recientes</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="IMG/pizza-margarita.jpg" class="w3-left w3-margin-right">
+          <span class="w3-large">Receta de Pizza</span><br>
+          <span>Aprende a hacer pizza Margherita</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="IMG/Lasagna.jpg" class="w3-left w3-margin-right">
+          <span class="w3-large">Lasaña Casera</span><br>
+          <span>El secreto de una lasaña perfecta</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Etiquetas populares</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Pizza</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Pasta</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Postres</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Risotto</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Italia</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tiramisú</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Gnocchi</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Focaccia</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Redes Sociales -->
+  <section class="w3-center w3-padding-32" style="background:#f1f1f1">
+    <h3>Síguenos en redes sociales</h3>
+    <div class="w3-xlarge w3-section">
+      <a href="#" class="w3-hover-opacity"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+      <a href="#" class="w3-hover-opacity"><i class="fa fa-instagram w3-hover-text-pink"></i></a>
+      <a href="#" class="w3-hover-opacity"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
+      <a href="#" class="w3
